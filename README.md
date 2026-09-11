@@ -1,7 +1,29 @@
-# Tauri + Vue + TypeScript
+# Schola
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Local First app for teacher. Practice project to learn Tauri/Vue
 
-## Recommended IDE Setup
+# TODO
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Database
+
+- [ ] Add Sqlite store with Tauri
+- [ ] Add key store for year information
+- [ ] Add table curriculum
+- [ ] Add API call to TeacherCoop to retrieve year
+- [ ] Add API call to TeacherCoop to retrieve Curriculum
+
+
+## Year Plan
+
+- [ ] Add a plan table: name, grade
+- [ ] Add a join table plan/curriculum named period: this should have a period_number
+- [ ] Modify plan/indexes to add a new plan button
+- [ ] Add a simple form to add a new plan:
+
+
+ ## Data base represerntation
+
+We have three tables:
+- curriculum
+- school_period (join table between plan and curriculum that indicates what curriculum item is related to what plan for what period)
+- plan
