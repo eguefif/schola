@@ -7,9 +7,17 @@ const host = process.env.TAURI_DEV_HOST;
 import tailwindcss from "@tailwindcss/vite";
 import VueRouter from "vue-router/vite";
 
+const atAliases: Record<string, string> = {
+  "@components": "./components",
+  "@pages": "./pages",
+};
+
 // https://vite.dev/config/
 export default defineConfig(() => ({
   plugins: [VueRouter(), tailwindcss(), vue()],
+  resolve: {
+    alias: atAliases,
+  },
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //

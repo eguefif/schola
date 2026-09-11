@@ -1,10 +1,18 @@
 {
-  "message": {
-    "homepage": {
-      "title": "Page d'accueil"
-    },
-    "programmation": {
-      "title": "Programmation"
+  "homepage": {
+    "title": "Page d'accueil"
+  },
+  "plan": {
+    "title": "Plannification",
+    "noPlan": "Vous n'avez pas de programmation.",
+    "newPlanButton": "Créer une programmation",
+    "newPlan": {
+      "title": "Nouvelle programmation",
+      "name": "Nom",
+      "namePlaceHolder": "Ma programmation de Ce2 2026",
+      "grade": "Niveau",
+      "pickGrade": "Choississez un niveau scolaire",
+      "submit": "Créer la programmation"
     }
   }
 }

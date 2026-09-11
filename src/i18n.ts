@@ -5,5 +5,6 @@ const messages = { fr };
 
 export const i18n = createI18n({
   locale: "fr",
+  fallbackLocale: "fr",
   messages: messages,
 });
