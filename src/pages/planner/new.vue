@@ -34,6 +34,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { invoke } from "@tauri-apps/api/core";
 import { ArrowLeftIcon } from "@heroicons/vue/24/solid";
 import { ref } from "vue";
 
@@ -53,6 +54,8 @@ const planGrade = ref<string>("Petite section");
 
 const submitPlan = (e: Event) => {
   e.preventDefault();
+
+  invoke("create_year_plan_cmd", { name: planName.value, grade: planGrade.value });
   console.log(planName);
   console.log(planGrade);
 };

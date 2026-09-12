@@ -1,3 +1,4 @@
+#[derive(serde::Serialize)]
 pub struct YearPlan {
     id: i64,
     name: String,
