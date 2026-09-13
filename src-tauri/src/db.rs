@@ -1,5 +1,8 @@
+pub mod curriculum;
+pub mod curriculum_model;
 pub mod init_db;
 pub mod model_error;
+pub mod seed_db;
 pub mod year_plan;
 pub mod year_plan_model;
 
