@@ -12,7 +12,13 @@
   "app": {
     "windows": [
       {
+        "label": "splashscreen",
+        "url": "/splashscreen"
+      },
+      {
         "title": "schola",
+        "label": "schola",
+        "visible": false,
         "width": 800,
         "height": 600
       }
