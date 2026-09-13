@@ -4,13 +4,16 @@ Local First app for teacher. Practice project to learn Tauri/Vue
 
 # TODO
 
+## Next
+
+- [ ] Add table curriculum
+- [ ] Add API call to TeacherCoop to retrieve Curriculum
+- [ ] Add key store for year information
+- [ ] Add API call to TeacherCoop to retrieve year
+
 ## Database
 
-- [ ] Add Sqlite store with Tauri
-- [ ] Add key store for year information
-- [ ] Add table curriculum
-- [ ] Add API call to TeacherCoop to retrieve year
-- [ ] Add API call to TeacherCoop to retrieve Curriculum
+- [x] Add Sqlite store with Tauri
 
 
 ## Year Plan
