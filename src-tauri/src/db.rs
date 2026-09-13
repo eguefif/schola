@@ -1,4 +1,5 @@
 pub mod init_db;
+pub mod model_error;
 pub mod year_plan;
 pub mod year_plan_model;
 
