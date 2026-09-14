@@ -500,8 +500,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1aa79e62e7697b8e29b513a68abacf485adcd1fe8284a4316c5ae868e6633327"
 dependencies = [
  "iana-time-zone",
+ "js-sys",
  "num-traits",
  "serde",
+ "wasm-bindgen",
  "windows-link 0.2.1",
 ]
 
@@ -3400,6 +3402,7 @@ dependencies = [
 name = "schola"
 version = "0.1.0"
 dependencies = [
+ "chrono",
  "log",
  "rusqlite",
  "serde",
@@ -3409,6 +3412,7 @@ dependencies = [
  "tauri-plugin-http",
  "tauri-plugin-log",
  "tauri-plugin-opener",
+ "tauri-plugin-store",
 ]
 
 [[package]]
@@ -4158,6 +4162,22 @@ dependencies = [
  "url",
  "windows",
  "zbus",
+]
+
+[[package]]
+name = "tauri-plugin-store"
+version = "2.4.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6708afbe549f176b712066e71648ba8fafba20789453718260c7ca356733cb0c"
+dependencies = [
+ "dunce",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-plugin",
+ "thiserror 2.0.20",
+ "tokio",
+ "tracing",
 ]
 
 [[package]]
